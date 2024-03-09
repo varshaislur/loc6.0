@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chatscope/chat-ui-kit-react": "^2.0.3",
     "@mui/icons-material": "^5.15.12",
     "@mui/material": "^5.15.12",
     "@popperjs/core": "^2.11.8",
