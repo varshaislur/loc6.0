@@ -1,7 +1,9 @@
+import Banner from "./Home/Banner";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello ho</h1>
+      <Banner/>
     </div>
   );
 }
