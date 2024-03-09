@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <Navitems />
-      <Banner />
-      <Outlet />
+      <div className="min-vh-100">
+        <Outlet />
+      </div>
     </div>
   );
 }
