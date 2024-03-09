@@ -11,7 +11,7 @@ const systemMessage = { //  Explain things like you're talking to a software pro
 function Chatbot() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm ChatGPT! Ask me anything!",
+      message: "Hello, I'm your all around shop helper! Ask me anything!",
       sentTime: "just now",
       sender: "ChatGPT"
     }
@@ -84,18 +84,34 @@ function Chatbot() {
 
   return (
     <div className="App">
-      <div style={{ position:"relative", height: "800px", width: "700px"  }}>
+      <div style={{ position:"relative", height: "500px", width: "1470px",backgroundColor:"black"  }}>
         <MainContainer>
-          <ChatContainer>       
+          <ChatContainer >       
             <MessageList 
               scrollBehavior="smooth" 
               typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)
-                return <Message key={i} model={message} />
+
+                return (
+                  <div key={i} style={{
+                    display: "flex",
+                    width: "100%",
+                    flexDirection: "row",
+                    justifyContent: message.sender === "ChatGPT" ? "start" : "end",
+                    borderRadius: "10px",  // Adjust the value based on your preference
+                }}>
+                    <text model={message} style={{
+                        width: "fit-content",
+                        backgroundColor: "#FFE6E6",
+                        borderRadius: "10px", 
+                        margin:"10px",
+                        padding:"10px" // Adjust the value to match the parent div's borderRadius
+                    }}>{message.message}</text>
+                </div>)
               })}
-            </MessageList>
+            </MessageList >
             <MessageInput placeholder="Type message here" onSend={handleSend} />        
           </ChatContainer>
         </MainContainer>
