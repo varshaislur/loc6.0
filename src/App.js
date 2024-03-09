@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <Navitems />
-      <Outlet/>
-     
-      
+      <div className="min-vh-100">
+        <Outlet />
+      </div>
     </div>
   );
 }
