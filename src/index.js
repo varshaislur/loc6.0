@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Home from "./Home/Home";
+import Shop from "./Home/Shop"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "swiper/css";
 
@@ -13,10 +15,22 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "././assets/css/icofont.min.css";
 import "././assets/css/animate.css";
 import "././assets/css/style.min.css";
+import Contact from "./Home/Contact";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
+    children: [
+      { path: "/", element: <Home /> },
+      {
+        path: "/Shop",
+        element: <Shop />,
+      },
+      {
+        path: "/Contact",
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 
