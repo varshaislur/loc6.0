@@ -6,8 +6,8 @@ import Navitems from "./Components/Navitems";
 function App() {
   return (
     <div className="App">
-       <Navitems/>
-      <Banner/>
+      <Navitems />
+      <Banner />
       <Outlet />
     </div>
   );
