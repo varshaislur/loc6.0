@@ -50,6 +50,9 @@ const Navitems = () => {
                     <Link to="/Shop">Shop</Link>
                   </li>
                   <li>
+                    <Link to="/Store">Store</Link>
+                  </li>
+                  <li>
                     <Link to="/Contact">Contact us</Link>
                   </li>
                 </ul>
@@ -67,11 +70,15 @@ const Navitems = () => {
                 <span></span>
                 <span></span>
                 <span></span>
+                <span></span>
               </div>
             </div>
             {/* sjs */}
-            <div className="ellepsis-bar d-md-none" onClick={()=> setSocialToggle(!socialToggle)}>
-                <i className="iconfont-info-square"></i>
+            <div
+              className="ellepsis-bar d-md-none"
+              onClick={() => setSocialToggle(!socialToggle)}
+            >
+              <i className="iconfont-info-square"></i>
             </div>
           </div>
         </div>
