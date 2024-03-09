@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Home from "./Home/Home";
-import Shop from "./Home/Shop"
+import Shop from "./Shop/Shop"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "swiper/css";
 

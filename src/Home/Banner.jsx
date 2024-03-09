@@ -32,7 +32,7 @@ const Banner = () => {
                     <SelectedCategory/>
                     <input type="text" name="search" id="search" placeholder="Search your products" value={searchInput} onChange={handleSearch}/> 
                     <button type="submit">
-                    <i class="icofont-search"></i>
+                    <i className="icofont-search"></i>
                     </button>
                 </form>
                 <p>{desc}</p>
