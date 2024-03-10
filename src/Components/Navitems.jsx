@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
+import { FiShoppingCart } from "react-icons/fi";
 const Navitems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [socialToggle, setSocialToggle] = useState(false);
@@ -64,7 +65,7 @@ const Navitems = () => {
                 Login
               </Link>
               <div>
-                
+                <FiShoppingCart style={{ marginLeft: "20px" }} />
               </div>
               <div
                 onClick={() => setMenuToggle(!menuToggle)}
