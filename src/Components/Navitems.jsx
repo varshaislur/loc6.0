@@ -63,6 +63,9 @@ const Navitems = () => {
               <Link to="/sign-up" className="d-none d-md-block">
                 Login
               </Link>
+              <div>
+                
+              </div>
               <div
                 onClick={() => setMenuToggle(!menuToggle)}
                 className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}

@@ -51,6 +51,7 @@ const Store = () => {
                       <>
                         {/* <TabPanel> */}
                         <Card
+                          
                           direction={{ base: "column", sm: "row" }}
                           overflow="hidden"
                           variant="outline"
@@ -89,7 +90,6 @@ const Store = () => {
                           </Stack>
                         </Card>
                         {/* </TabPanel> */}
-                        
                       </>
                     );
                   })}

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 const ProductCard = ({ GridList, products }) => {
   return (
     <div
@@ -11,8 +9,8 @@ const ProductCard = ({ GridList, products }) => {
       }`}
     >
       {products.map((products, i) => (
-        <div key={i} className="col-lg-4 col-md-6 col-12">
-          <div className="product-item">
+        <div key={i} className="col-lg-4 col-md-6 col-12 ">
+          <div className="product-item ">
             <div className="product-thumb">
               <div className="pro-thumb">
                 <img src={products.img} alt="" />
@@ -31,11 +29,11 @@ const ProductCard = ({ GridList, products }) => {
               </div>
             </div>
             <div className="product-content">
-                <h5>
-                    <Link to={`/shop/${products.id}`}>{products.name}</Link>
-                </h5>
-                
-                <h6>${products.price}</h6>
+              <h5>
+                <Link to={`/shop/${products.id}`}>{products.name}</Link>
+              </h5>
+
+              <h6>${products.price}</h6>
             </div>
           </div>
         </div>
