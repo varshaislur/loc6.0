@@ -4,8 +4,12 @@ import "./index.css";
 import App from "./App";
 import Home from "./Home/Home";
 import Shop from "./Shop/Shop"
+import Store from "../src/Store/Store"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "swiper/css";
+
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from "@chakra-ui/react";
 
 // bootstrap css
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,6 +34,10 @@ const router = createBrowserRouter([
         path: "/Contact",
         element: <Contact />,
       },
+      {
+        path: "/Store",
+        element: <Store />,
+      },
     ],
   },
 ]);
@@ -39,5 +47,7 @@ root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <RouterProvider router={router} />
+  <ChakraProvider>
+    <RouterProvider router={router} />
+  </ChakraProvider>
 );
