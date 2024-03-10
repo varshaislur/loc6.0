@@ -54,6 +54,9 @@ const Navitems = () => {
                     <Link to="/Store">Store</Link>
                   </li>
                   <li>
+                    <Link to="/Review">Review</Link>
+                  </li>
+                  <li>
                     <Link to="/Contact">Contact us</Link>
                   </li>
                 </ul>

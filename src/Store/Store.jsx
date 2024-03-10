@@ -129,6 +129,7 @@ const DualApiFetch = () => {
       try {
         const response = await axios.get(URL1);
         setData1(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching data from API 1:", error);
       }
@@ -138,6 +139,7 @@ const DualApiFetch = () => {
       try {
         const response = await axios.get(URL2);
         setData2(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching data from API 2:", error);
       }
@@ -149,7 +151,7 @@ const DualApiFetch = () => {
 
   return (
     <>
-      <PageHeader title="Product Comparisson" curPage="Shop" />
+      <PageHeader title="Product Comparison" curPage="Shop" />
       <div style={{ display: "flex" }}>
         <div style={{ flex: 1, marginLeft: "200px" }}>
           <h2
@@ -210,7 +212,7 @@ const DualApiFetch = () => {
               marginBottom: "50px",
             }}
           >
-            Amazon
+            Croma
           </h2>
           {/* <ul> */}
           <Card maxW="sm">
@@ -243,7 +245,7 @@ const DualApiFetch = () => {
                       variant="ghost"
                       colorScheme="blue"
                     >
-                      Add to cart
+                      Analyse
                     </Button>
                   </ButtonGroup>
                 </CardFooter>

@@ -7,6 +7,7 @@ import Shop from "./Shop/Shop"
 import Store from "../src/Store/Store"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "swiper/css";
+import Review from "./Components/Review";
 
 // 1. import `ChakraProvider` component
 import { ChakraProvider } from "@chakra-ui/react";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/Store",
         element: <Store />,
+      },
+      {
+        path: "/Review",
+        element: <Review />,
       },
     ],
   },
