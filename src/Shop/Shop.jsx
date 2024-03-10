@@ -6,7 +6,7 @@ const showResults = "Showing 01 - 12 of 139 Results";
 
 const Shop = () => {
   const [GridList, setGridList] = useState(true);
-    const [products, setProducts] = useState(Data);
+  const [products, setProducts] = useState(Data);
 
   return (
     <div>
@@ -14,7 +14,7 @@ const Shop = () => {
       <div className="shop-page padding-tb">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8 col-12">
+            <div className="col-lg-10 col-12">
               <article>
                 <div className="shop-title d-flex flex-warp justify-content-between">
                   <p>{showResults}</p>
@@ -32,7 +32,7 @@ const Shop = () => {
                   </div>
                 </div>
                 <div>
-                    <ProductCard GridList={GridList} products={products}/>
+                  <ProductCard GridList={GridList} products={products} />
                 </div>
               </article>
             </div>
