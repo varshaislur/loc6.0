@@ -12,7 +12,7 @@ import {
 // const API_KEY = process.env.API_KEY;
 // console.log(process.env.API_KEY);
 // "Explain things like you would to a 10 year old learning how to code."
-const API_KEY = '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';
+const API_KEY = '';
 const systemMessage = {
   //  Explain things like you're talking to a software professional with 5 years of experience.
   role: "system",
